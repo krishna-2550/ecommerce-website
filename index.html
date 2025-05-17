@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub - Your Premium Electronics Store</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-bolt"></i>
+            <h1>TechHub</h1>
+        </div>
+        <nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search products...">
+                <i class="fas fa-search"></i>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#" class="active" data-category="all">All Products</a></li>
+                <li><a href="#" data-category="Smartphones">Smartphones</a></li>
+                <li><a href="#" data-category="Laptops">Laptops</a></li>
+                <li><a href="#" data-category="Audio">Audio</a></li>
+                <li><a href="#" data-category="Wearables">Wearables</a></li>
+                <li><a href="#" data-category="Gaming">Gaming</a></li>
+                <li><a href="#" data-category="TVs">TVs</a></li>
+                <li><a href="#" data-category="Tablets">Tablets</a></li>
+                <li><a href="#" data-category="Drones">Drones</a></li>
+            </ul>
+            
+            <!-- Price Range Section -->
+            <h3>Price Range</h3>
+            <div class="price-filter">
+                <input type="range" min="0" max="207500" value="207500" id="priceRange">
+                <p>Max Price: <span id="priceValue">₹2,07,500</span></p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="products-grid">
+            <div class="results-count"></div>
+            <!-- Product cards will be dynamically added here -->
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>TechHub is your premium destination for the latest and greatest in consumer electronics.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@techhub.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
